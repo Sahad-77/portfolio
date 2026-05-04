@@ -4,7 +4,8 @@
     --light-bg: #112240;
     --text-primary: #ccd6f6;
     --text-secondary: #8892b0;
-    --accent: #64ffda; /* Neon Cyan */
+    --accent: #64ffda;
+    /* Neon Cyan */
     --white: #ffffff;
     --glass: rgba(17, 34, 64, 0.7);
 }
@@ -28,13 +29,16 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--text-secondary);
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
@@ -46,7 +50,8 @@ nav {
     align-items: center;
     padding: 20px 8%;
     background: rgba(10, 25, 47, 0.85);
-    backdrop-filter: blur(10px); /* Blurry glass effect */
+    backdrop-filter: blur(10px);
+    /* Blurry glass effect */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -106,7 +111,8 @@ nav {
     margin-bottom: 20px;
     border-radius: 50%;
     padding: 5px;
-    background: linear-gradient(45deg, var(--accent), transparent); /* Glowing border */
+    background: linear-gradient(45deg, var(--accent), transparent);
+    /* Glowing border */
     animation: float 6s ease-in-out infinite;
 }
 
@@ -234,7 +240,7 @@ section {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .icon-box {
@@ -351,17 +357,26 @@ footer {
 
 /* --- Animation Keyframes --- */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Add JS to toggle this if needed, for now hidden on mobile */
+        display: none;
+        /* Add JS to toggle this if needed, for now hidden on mobile */
     }
-    
+
     .hamburger {
         display: block;
     }
@@ -369,7 +384,7 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     section {
         padding: 60px 5%;
     }
